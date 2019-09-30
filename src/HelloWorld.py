@@ -6,6 +6,7 @@ def print_string(print_this):
 def main(print_this):
 	print(print_string(print_this))
 	
+	
 def test_print():
 	assert print_string("hi")=="hi"
 
