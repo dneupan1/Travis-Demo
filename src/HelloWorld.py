@@ -8,7 +8,7 @@ def main(print_this):
 	
 	
 def test_print():
-	assert print_string("hi")=="hii"
+	assert print_string("hi")=="hi"
 
 if __name__=='__main__':
 	parser=argparse.ArgumentParser()
