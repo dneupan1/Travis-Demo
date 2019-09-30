@@ -6,5 +6,13 @@ python:
 #install:
   #- pip install -r requirements.txt
 # command to run tests
-script:
-  - pytest src/HelloWorld.py
+
+jobs:
+  include:
+    - stage: test
+      script: pytest src/HelloWorld.py
+    - # stage name not required, will continue to use `test`
+      script: pytest src/HelloWorld.py
+    - stage: deploy #not really deploy
+      script: pytest src/HelloWorld.py
+      
