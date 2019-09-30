@@ -11,8 +11,6 @@ jobs:
   include:
     - stage: test
       script: pytest src/HelloWorld.py
-    - # stage name not required, will continue to use `test`
-      script: pytest src/HelloWorld.py
-    - stage: deploy #not really deploy
+    - stage: test #not really deploy
       script: pytest src/HelloWorld.py
       
